@@ -1,0 +1,65 @@
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #d3d3d3;
+    
+}
+
+h1{
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+  color: #d3d3d3;
+}
+
+P{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+textarea{
+    width: 500px;
+    height: 100px;
+    resize: none;
+    background-color: #d3d3d3;
+    text-align: center;
+    order: 3px solid black;
+    border: 3px solid black;
+}
+
+#offset{
+    width: 50px;
+    background-color: #d3d3d3;
+    text-align: center;
+    border: 3px solid black;
+}
+
+hr{
+ border-color: black;    
+}
+
+.buttons{
+    border: 4px solid black;
+    font-weight: bold;
+}
+
+#homepage{
+display: block;
+}
+
+#FinalMessage{
+display: none;
+}
+
+#FinalMessage2{
+display: none;
+}
+
