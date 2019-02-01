@@ -1,8 +1,8 @@
-function cipherEncode(message, offset) {
+const cipherEncode = (message, offset) => {
 
   let codeCipher = '';
 
-  for (i = 0; i < message.length; i++) {
+  for (let i in message) {
     let codAsc = message.charCodeAt(i);
 
     if (codAsc >= 65 && codAsc <= 90) {
@@ -30,22 +30,22 @@ function cipherEncode(message, offset) {
 
 }
 
-function printEncode() {
+const printEncode = () => {
   let message = document.getElementById("message").value;
   let offset = parseInt(document.getElementById("offset").value);
-  
+
   document.getElementById("homepage").style.display = "none";
   document.getElementById("FinalMessage").style.display = "block";
 
   document.getElementById("resultCod").innerHTML = cipherEncode(message, offset);
+  document.getElementById("message").value = " ";
 }
 
-
-function cipherDecode(message, offset) {
+const cipherDecode = (message, offset) => {
 
   let decoderCipher = '';
 
-  for (i = 0; i < message.length; i++) {
+  for (let i in message) {
     let codAsc = message.charCodeAt(i);
 
     if (codAsc >= 65 && codAsc <= 90) {
@@ -70,20 +70,31 @@ function cipherDecode(message, offset) {
   return decoderCipher;
 }
 
-function printDecode() {
+const printDecode = () => {
   document.getElementById("homepage").style.display = "none";
   document.getElementById("FinalMessage2").style.display = "block";
 
   message = document.getElementById("message").value;
   offset = parseInt(document.getElementById("offset").value);
- 
+
   document.getElementById("resultDecoder").innerHTML = cipherDecode(message, offset);
+  document.getElementById("message").value = " ";
 }
 
-function goBack() {
+const goBack = () => {
   document.getElementById("homepage").style.display = "block";
   document.getElementById("FinalMessage").style.display = "none";
   document.getElementById("FinalMessage2").style.display = "none";
 }
 
+function copy() {
+  let textarea = document.getElementById("resultCod");
+  textarea.select();
+  document.execCommand("copy");
+}
 
+function copy2() {
+  let textarea = document.getElementById("resultDecoder");
+  textarea.select();
+  document.execCommand("copy");
+}

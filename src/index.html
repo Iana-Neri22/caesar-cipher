@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="cesar cipher.jpg">
-    <title>Cipher</title>
+    <link rel="icon" href="imagens/cesar cipher.jpg">
+    <title><a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra
+        de César</a></title>
 </head>
 
 <body>
     <header>
         <h1>Cifra de César</h1>
-        <hr>
-        <p>Codificador/Decodificador de <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra
-                de César</a> </p>
-        <hr>
+        
     </header>
 
     <div id="homepage">
@@ -27,33 +25,41 @@
         <input type="number" id="offset" class="userInput" placeholder="nº">
         <br>
    
-        <label>
+        
             <h3>Mensagem:</h3>
-        </label>
+        
 
         <textarea class="userInput" class="userInput" id="message" placeholder="Digite sua mensagem"></textarea>
         <br>
     
-        <input type="button" class="buttons" value="Codificar" onclick="printEncode()">
-        <input type="button" class="buttons" value="Decodificar" onclick="printDecode()">
-        <br>
-    </div>
 
+    
+        <input type="button" class="buttons" value="Criptografar" onclick="printEncode()">
+        <input type="button" class="buttons" value="Descriptografar" onclick="printDecode()">
+        </div>
+        
+        
+    
+    
 
 
 
     <div id="FinalMessage">
         <p class="hidden" id="pCod">Mensagem Codificada<p>
+            <br><br><br><br>
                 <textarea readonly id="resultCod" class="hidden"></textarea>
                 <br>
                 <input type="button" value="Voltar" onclick="goBack()" class="buttons">
+                <button onclick="copy()" class="buttons">Copiar</button>
     </div>
 
     <div id="FinalMessage2">
         <h3 class="hidden" id="pDecod">Mensagem Decodificada</h3>
+        <br><br><br><br>
         <textarea readonly name="" id="resultDecoder" class="hidden"></textarea>
         <br>
         <input type="button" value="Voltar" onclick="goBack()" class="buttons">
+        <button onclick="copy2()" class="buttons">Copiar</button>
     </div>
 
     <script src="cipher.js"></script>
