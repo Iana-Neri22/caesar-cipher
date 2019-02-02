@@ -1,9 +1,8 @@
 
 body{
-    font-family: sans-serif;
-    text-align: center;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
     background-color: #cce0ff;
-    
 }
 
 h1{
@@ -11,53 +10,43 @@ h1{
   border: 2px solid #1a1a1a;
   border-color:#1a1a1a;
   border-radius: 10px;
-  color: #1a1a1a;
+  color: #f90;
   border: thin;
-  text-decoration: underline;
 }
 
 P{
     font-weight: bold;
+    color: #f90;
 }
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-
 
 textarea{
-    width: 500px;
-    height: 100px;
+    width: 350px;
+    height: 220px;
     resize: none;
     background-color: #cce0ff;
     text-align: center;
-    order: 3px #1a1a1a;
-    border: 2px solid #1a1a1a;
     border-radius: 15px;
+    border-color: #f90;
 }
 
 #offset{
     width: 50px;
     background-color: #cce0ff;
     text-align: center;
-    border: 2px solid #1a1a1a;
+    border: 1px solid #f90;
     border-radius: 5px;
-}
-
-hr{
- border-color: #1a1a1a;    
 }
 
 .buttons{
-    border: 2px solid #1a1a1a;
+    border: 1px solid #f90;
     border-radius: 5px;
     font-weight: bold;
+    color: #0066cc;
 }
 
 #homepage{
 display: block;
+color: #f90;
 }
 
 #FinalMessage{
