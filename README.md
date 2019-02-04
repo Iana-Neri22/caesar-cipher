@@ -21,13 +21,13 @@ Por exemplo se usarmos o deslocamento de 3:
 * Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
 ### Definição do produto
- O que é?
+# O que é?
 Esse site permite ao usuário inserir mensagens para serem criptografadas e descriptografadas.
 
-Como usar? 
+#Como usar? 
 Para utilizar essa aplicação basta inserir o número de deslocamento desejado e a mensagem ao qual deseja criptografar/descriptografar. A mensagem criptografada/descriptografada é então exibida na tela.  
 
- Como funciona?
-Para permitir a criptografia e descriptografia das mensagens foi criada uma função que utiliza o algoritmo da Cifra de César, ela criptografa e descriptografa a mensagem inserida pelo usuário, de acordo com a chave de deslocamento inserido.  Por exemplo, inserindo a mensagem “abc” com o deslocamento  1  para criptografar, o resultado é “bcd”. O resultado é exibido na tela.
+# Como funciona?
+Para permitir a criptografar e descriptografar as mensagens foi criada uma função que utiliza o algoritmo da Cifra de César, ela criptografa e descriptografa a mensagem inserida pelo usuário, de acordo com a chave de deslocamento inserido.  Por exemplo, inserindo a mensagem “abc” com o deslocamento  1  para criptografar, o resultado é “bcd”. O resultado é exibido na tela.
 
 ![Fluxograma](https://github.com/Iana-Neri22/caesar-cipher/blob/master/src/imagens/Diagrama%20-%20Cipher.jpeg)
