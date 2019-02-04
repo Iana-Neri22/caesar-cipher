@@ -24,7 +24,7 @@ Por exemplo se usarmos o deslocamento de 3:
 # O que é?
 Esse site permite ao usuário inserir mensagens para serem criptografadas e descriptografadas.
 
-#Como usar? 
+# Como usar? 
 Para utilizar essa aplicação basta inserir o número de deslocamento desejado e a mensagem ao qual deseja criptografar/descriptografar. A mensagem criptografada/descriptografada é então exibida na tela.  
 
 # Como funciona?
