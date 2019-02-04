@@ -23,16 +23,13 @@ const cipherEncode = (message, offset) => {
       let others = String.fromCharCode(codAsc);
       codeCipher += others;
     }
-
-
   }
   return codeCipher;
-
 }
 
 const printEncode = () => {
   let message = document.getElementById("message").value;
-  let offset = parseInt(document.getElementById("offset").value);
+  const offset = parseInt(document.getElementById("offset").value);
 
   document.getElementById("homepage").style.display = "none";
   document.getElementById("FinalMessage").style.display = "block";
@@ -71,11 +68,11 @@ const cipherDecode = (message, offset) => {
 }
 
 const printDecode = () => {
+  let message = document.getElementById("message").value;
+  const offset = parseInt(document.getElementById("offset").value);
+
   document.getElementById("homepage").style.display = "none";
   document.getElementById("FinalMessage2").style.display = "block";
-
-  message = document.getElementById("message").value;
-  offset = parseInt(document.getElementById("offset").value);
 
   document.getElementById("resultDecoder").innerHTML = cipherDecode(message, offset);
   document.getElementById("message").value = " ";

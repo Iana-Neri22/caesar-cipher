@@ -1,27 +1,27 @@
 
 body{
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: cursive;
     text-align: left;
     background-color: #cce0ff;
+    background-image: url("imagens/segredosled-magic.jpg");
 }
 
 h1{
-  border-width: short;
   border: 2px solid #1a1a1a;
   border-color:#1a1a1a;
   border-radius: 10px;
-  color: #f90;
+  color: #1a0000;
   border: thin;
+  padding-left: 2.0em; 
 }
 
-P{
-    font-weight: bold;
-    color: #f90;
+h3{
+    padding-left: 2.0em;
 }
 
 textarea{
-    width: 350px;
-    height: 220px;
+    width: 270px;
+    height: 200px;
     resize: none;
     background-color: #cce0ff;
     text-align: center;
@@ -41,19 +41,31 @@ textarea{
     border: 1px solid #f90;
     border-radius: 5px;
     font-weight: bold;
+    color:  #1a0000;
+    margin-left:30px;
+}
+
+.buttons:hover, .buttons2:hover{
     color: #0066cc;
+	background-color: #FFFFFF;
+	border-radius: 10px 0px 10px 0px;
+}
+
+.buttons2{
+    border: 1px solid #f90;
+    border-radius: 5px;
+    font-weight: bold;
+    color:  #1a0000;
+    margin-left: 5px;
 }
 
 #homepage{
 display: block;
-color: #f90;
+color: #1a0000;
+padding-left: 2.0em;
 }
 
-#FinalMessage{
+#FinalMessage, #FinalMessage2{
 display: none;
+padding-left: 2.0em;
 }
-
-#FinalMessage2{
-display: none;
-}
-

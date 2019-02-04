@@ -6,43 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/cesar cipher.jpg">
+    <link rel="icon" href="imagens/cesarcipher.jpg">
     <title>Cifra de César</title>
 </head>
 
-<body background="imagens/segredosled-magic.jpg">
+<body>
     <header>
         <h1>Cifra de César</h1>
-        
     </header>
-        <div id="homepage">
-        <p>Digite a chave de deslocamento</p>
-        <label><strong>Número:</strong></label>
+
+    <div id="homepage">
+        <label><strong>Número de deslocamento:</strong></label>
         <input type="number" id="offset" class="userInput" placeholder="nº">
-        <br>   
-            <h3>Mensagem:</h3>    
-        <textarea class="userInput" class="userInput" id="message" placeholder="Digite sua mensagem"></textarea>
-        <br>   
-        <input type="button" class="buttons" value="Criptografar" onclick="printEncode()">
-        <input type="button" class="buttons" value="Descriptografar" onclick="printDecode()">
-        </div>
-        
+        <br>
+        <h3>Escreva sua Mensagem:</h3>
+        <textarea class="userInput" id="message" placeholder="Mensagem"></textarea>
+        <br>
+      <input type="button" class="buttons" value="Criptografar" onclick="printEncode()">
+        &nbsp;
+        <input type="button" class="buttons2" value="Descriptografar" onclick="printDecode()">
+    </div>
+
     <div id="FinalMessage">
-        <h3 class="hidden" id="pCod">Mensagem Codificada<h3>
-        <br><br><br><br>
-        <textarea readonly id="resultCod" class="hidden"></textarea>
+        <br>
+        <h3>Mensagem Criptografada</h3>
+        <textarea readonly id="resultCod"></textarea>
         <br>
         <input type="button" value="Voltar" onclick="goBack()" class="buttons">
-        <input type="button" value="Copiar" onclick="copy()" class="buttons">
+        &nbsp;
+        <input type="button" value="Copiar" onclick="copy()" class="buttons2">
     </div>
 
     <div id="FinalMessage2">
-        <h3 class="hidden" id="pDecod">Mensagem Decodificada</h3>
-        <br><br><br><br>
-        <textarea readonly id="resultDecoder" class="hidden"></textarea>
+        <br>
+        <h3>Mensagem Descriptografada</h3>
+        <textarea readonly id="resultDecoder"></textarea>
         <br>
         <input type="button" value="Voltar" onclick="goBack()" class="buttons">
-        <input type="button" value="Copiar" onclick="copy2()" class="buttons">
+        &nbsp;
+       <input type="button" value="Copiar" onclick="copy2()" class="buttons2">
     </div>
 
     <script src="cipher.js"></script>
