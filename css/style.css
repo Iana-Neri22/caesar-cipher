@@ -10,12 +10,7 @@ h1{
   border-color:#1a1a1a;
   border-radius: 10px;
   color: #1a0000;
-  border: thin;
-  padding-left: 2.0em; 
-}
-
-h3{
-  padding-left: 2.0em;
+  border: thin; 
 }
 
 .userInput{
@@ -28,13 +23,13 @@ h3{
   border-color: #f90;
 }
 
-#offset{
+/* #offset{
   width: 50px;
   background-color: #cce0ff;
   text-align: center;
   border: 1px solid #f90;
   border-radius: 5px;
-}
+} */
 
 .buttons{
   border: 1px solid #f90;
@@ -51,12 +46,15 @@ h3{
 }
 
 #homepage{
-  display: block;
-  color: #1a0000;
-  padding-left: 2.0em;
+  color: #1a0000; 
 }
 
 #FinalMessage, #FinalMessage2{
   display: none;
   padding-left: 2.0em;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
 }
