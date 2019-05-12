@@ -18,7 +18,7 @@ h3{
   padding-left: 2.0em;
 }
 
-textarea{
+.userInput{
   width: 270px;
   height: 200px;
   resize: none;
