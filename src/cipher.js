@@ -15,47 +15,37 @@ function printDecode(){
 
 function cipherEncode(message, offset){
   let codeCipher = '';
-
   for (let i in message) {
     let codAsc = message.charCodeAt(i);
     if (codAsc >= 65 && codAsc <= 90) {
       let encodeMai = (codAsc - 65 + (offset % 26) + 26) % 26 + 65;
-      let codMai = String.fromCharCode(encodeMai);
-      codeCipher += codMai;
+      codeCipher += String.fromCharCode(encodeMai);
     }
     else if (codAsc >= 97 && codAsc <= 122) {
       let encodeMin = (codAsc - 97 + (offset % 26) + 26) % 26 + 97;
-      let codMin = String.fromCharCode(encodeMin);
-      codeCipher += codMin;
+      codeCipher += String.fromCharCode(encodeMin);
     }
     else {
-      let others = String.fromCharCode(codAsc);
-      codeCipher += others;
+      codeCipher += String.fromCharCode(codAsc);
     }
   }
   return codeCipher;
 }
 
-
-
 function cipherDecode(message, offset) {
   let decoderCipher = '';
-
   for (let i in message) {
     let codAsc = message.charCodeAt(i);
     if (codAsc >= 65 && codAsc <= 90) {
       let decoderMai = (codAsc - 65 - (offset % 26) + 26) % 26 + 65;
-      let decMai = String.fromCharCode(decoderMai);
-      decoderCipher += decMai;
+      decoderCipher += String.fromCharCode(decoderMai);
     }
     else if (codAsc >= 97 && codAsc <= 122) {
       let decoderMin = (codAsc - 97 - (offset % 26) + 26) % 26 + 97;
-      let decMin = String.fromCharCode(decoderMin);
-      decoderCipher += decMin;
+      decoderCipher += String.fromCharCode(decoderMin);
     }
     else {
-      let others = String.fromCharCode(codAsc);
-      decoderCipher += others;
+      decoderCipher += String.fromCharCode(codAsc);
     }
   }
   return decoderCipher;
