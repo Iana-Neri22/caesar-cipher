@@ -1,6 +1,18 @@
 document.querySelector("#encode").addEventListener("click", printEncode);
 document.querySelector("#decode").addEventListener("click", printDecode);
 
+function printEncode(){
+  const message = document.getElementById("message").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  document.getElementById("resultCod").value = cipherEncode(message, offset);
+}
+
+function printDecode(){
+  const message = document.getElementById("resultCod").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  document.getElementById("message").value = cipherDecode(message, offset);
+}
+
 function cipherEncode(message, offset){
   let codeCipher = '';
 
@@ -24,16 +36,7 @@ function cipherEncode(message, offset){
   return codeCipher;
 }
 
-function printEncode(){
-  const message = document.getElementById("message").value;
-  const offset = parseInt(document.getElementById("offset").value);
 
-  document.getElementById("homepage").style.display = "none";
-  document.getElementById("FinalMessage").style.display = "block";
-
-  document.getElementById("resultCod").innerHTML = cipherEncode(message, offset);
-  document.getElementById("message").value = " ";
-}
 
 function cipherDecode(message, offset) {
   let decoderCipher = '';
@@ -57,32 +60,3 @@ function cipherDecode(message, offset) {
   }
   return decoderCipher;
 }
-
-function printDecode(){
-  let message = document.getElementById("message").value;
-  const offset = parseInt(document.getElementById("offset").value);
-
-  document.getElementById("homepage").style.display = "none";
-  document.getElementById("FinalMessage2").style.display = "block";
-
-  document.getElementById("resultDecoder").innerHTML = cipherDecode(message, offset);
-  document.getElementById("message").value = " ";
-}
-
-function goBack() {
-  document.getElementById("homepage").style.display = "block";
-  document.getElementById("FinalMessage").style.display = "none";
-  document.getElementById("FinalMessage2").style.display = "none";
-}
-
-const copyButtons = document.querySelectorAll(".copy-btn")
-for(let i in copyButtons){
-  copyButtons[i].addEventListener("click", copy)
-}
-function copy() {
-  const textArea = document.querySelectorAll("textarea")
-  for(let i in textArea){
-    textArea[i].select();
-    document.execCommand("copy");
-  }  
-  }

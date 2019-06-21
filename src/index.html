@@ -9,45 +9,29 @@
   <link rel="icon" href="../src/imagens/cesarcipher.jpg">
   <title>Cifra de César</title>
 </head>
-
 <body>
   <header>
-    <h1>Cifra de César</h1>
+    <h1 class="header-logo">Cifra de César</h1>
   </header>
-  
   <main>
-    <section id="homepage">
+    <section class="wrap">
+      <div class="align-center">
       <label for="offset"><strong>Número de deslocamento:</strong></label>
-      <input type="number" id="offset" class="userInput" placeholder="nº">
-      <h3>Escreva sua Mensagem:</h3>
-      <textarea class="userInput" id="message" placeholder="Mensagem"></textarea>
-      <input type="button" class="buttons" id="encode" value="Criptografar">
+      <input type="number" id="offset" class="offset" placeholder="nº">
+    </div>
+      <div class="text-box">
+        <h3>Mensagem em Português:</h3>
+        <textarea class="text-area" id="message" placeholder="Mensagem"></textarea>
+        <input type="button" class="buttons" id="encode" value="Criptografar">
+      </div>
+     <div class="text-box">
+      <h3>Mensagem Codificada:</h3>
+      <textarea class="text-area" id="resultCod"></textarea>
       <input type="button" class="buttons" id="decode" value="Descriptografar">
+     </div>
     </section>
-
-    <div id="FinalMessage">
-        <br>
-        <h3>Mensagem Criptografada</h3>
-        <textarea readonly id="resultCod"></textarea>
-        <br>
-        <input type="button" value="Voltar" onclick="goBack()" class="buttons">
-        &nbsp;
-        <input type="button" value="Copiar" class="copy-btn">
-    </div>
-
-    <div id="FinalMessage2">
-        <br>
-        <h3>Mensagem Descriptografada</h3>
-        <textarea readonly id="resultDecoder"></textarea>
-        <br>
-        <input type="button" value="Voltar" onclick="goBack()" class="buttons">
-        &nbsp;
-       <input type="button" value="Copiar" onclick="copy2()" class="copy-btn">
-    </div>
-    </main>
-
+  </main>
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
 </body>
-
 </html>
