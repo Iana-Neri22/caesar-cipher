@@ -1,19 +1,4 @@
-document.querySelector("#encode").addEventListener("click", printEncode);
-document.querySelector("#decode").addEventListener("click", printDecode);
-
-function printEncode(){
-  const message = document.getElementById("message").value;
-  const offset = parseInt(document.getElementById("offset").value);
-  document.getElementById("resultCod").value = cipherEncode(message, offset);
-}
-
-function printDecode(){
-  const message = document.getElementById("resultCod").value;
-  const offset = parseInt(document.getElementById("offset").value);
-  document.getElementById("message").value = cipherDecode(message, offset);
-}
-
-function cipherEncode(message, offset){
+cipherEncode = (message, offset) => {
   let codeCipher = '';
   for (let i in message) {
     const codAsc = message.charCodeAt(i);
@@ -32,7 +17,13 @@ function cipherEncode(message, offset){
   return codeCipher;
 }
 
-function cipherDecode(message, offset) {
+printEncode = () => {
+  const message = document.getElementById("message").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  document.getElementById("resultCod").value = cipherEncode(message, offset);
+}
+
+cipherDecode = (message, offset) => {
   let decoderCipher = '';
   for (let i in message) {
     const codAsc = message.charCodeAt(i);
@@ -50,3 +41,12 @@ function cipherDecode(message, offset) {
   }
   return decoderCipher;
 }
+
+printDecode = () => {
+  const message = document.getElementById("resultCod").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  document.getElementById("message").value = cipherDecode(message, offset);
+}
+
+document.querySelector("#encode").addEventListener("click", printEncode);
+document.querySelector("#decode").addEventListener("click", printDecode);
