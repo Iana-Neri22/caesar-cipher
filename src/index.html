@@ -14,21 +14,26 @@
     <h1 class="header-logo">Cifra de César</h1>
   </header>
   <main>
-    <section class="wrap">
+    <section>
+     
       <div class="align-center">
       <label for="offset"><strong>Número de deslocamento:</strong></label>
+
       <input type="number" id="offset" class="offset" placeholder="nº">
     </div>
+    <div class="wrap">
       <div class="text-box">
-        <h3>Mensagem em Português:</h3>
-        <textarea class="text-area" id="message" placeholder="Mensagem"></textarea>
+        <h3>Mensagem em Português</h3>
+        <textarea class="text-area" id="message"></textarea>
         <input type="button" class="buttons" id="encode" value="Criptografar">
       </div>
+    
      <div class="text-box">
-      <h3>Mensagem Codificada:</h3>
+      <h3>Mensagem Codificada</h3>
       <textarea class="text-area" id="resultCod"></textarea>
       <input type="button" class="buttons" id="decode" value="Descriptografar">
      </div>
+    </div>
     </section>
   </main>
     <script src="cipher.js"></script>
